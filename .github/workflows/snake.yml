@@ -1,62 +1,122 @@
-# ================================================
-#  SNEK.EXE - Autonomous Contribution Consumer
-#  Status: HUNGRY
-#  Mood: *slithering noises*
-# ================================================
-#
-#  > initializing appetite...
-#  > scanning for contributions...
-#  > nom nom nom
-#
-# ================================================
+# ╔══════════════════════════════════════════════════════════════════════════════╗
+# ║                                                                              ║
+# ║   ███████╗███╗   ██╗███████╗██╗  ██╗   ███╗   ██╗███████╗██╗   ██╗██████╗    ║
+# ║   ██╔════╝████╗  ██║██╔════╝██║ ██╔╝   ████╗  ██║██╔════╝██║   ██║██╔══██╗   ║
+# ║   ███████╗██╔██╗ ██║█████╗  █████╔╝    ██╔██╗ ██║█████╗  ██║   ██║██████╔╝   ║
+# ║   ╚════██║██║╚██╗██║██╔══╝  ██╔═██╗    ██║╚██╗██║██╔══╝  ██║   ██║██╔══██╗   ║
+# ║   ███████║██║ ╚████║███████╗██║  ██╗   ██║ ╚████║███████╗╚██████╔╝██║  ██║   ║
+# ║   ╚══════╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝   ╚═╝  ╚═══╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝   ║
+# ║                                                                              ║
+# ║   SNEK-NEUR v4.2.0 | Autonomous Contribution Consumption Neural Engine      ║
+# ║   Powered by 847 billion mass parameters (mostly just hunger)                     ║
+# ║                                                                              ║
+# ╠══════════════════════════════════════════════════════════════════════════════╣
+# ║  MODEL SPECS:                                                                ║
+# ║  ├─ Architecture: Transformer-based Serpentine Attention Network (TSAN)     ║
+# ║  ├─ Training Data: 10 years of contribution graphs (very nutritious)        ║
+# ║  ├─ Loss Function: HungerCrossEntropy(stomach, food)                        ║
+# ║  ├─ Optimizer: Adam but he's a snake (AdamS)                                ║
+# ║  ├─ Learning Rate: however fast food appears                                ║
+# ║  └─ Inference Speed: ssssssuper fast                                        ║
+# ║                                                                              ║
+# ║  CURRENT STATUS: OMNOMNOM                                                    ║
+# ╚══════════════════════════════════════════════════════════════════════════════╝
 
-name: snek go brrr
+name: SNEK-NEUR v4.2.0 | Deep Hunger Network
 
 on:
   schedule:
-    # every midnight i wake up hungry
+    # CRON-BASED APPETITE SCHEDULER
+    # Model retrains every 24h to optimize eating patterns
+    # Research shows midnight snacks hit different
     - cron: "0 0 * * *"
 
-  # human pressed the button. fine, i'll eat.
+  # MANUAL INFERENCE TRIGGER
+  # For when humans want to witness the AI in action
+  # Warning: May cause mass existential questions about green squares
   workflow_dispatch:
 
   push:
     branches:
-    - main  # new commits detected. smells delicious.
+    - main
+    # ^ New commits detected in training data pipeline
+    #   Initiating real-time model update...
+    #   Just kidding, snek just hungry
 
 jobs:
-  feed-the-snek:
-    # i require sustenance
-    permissions:
-      contents: write  # let me eat in peace
+  neural-consumption-engine:
+    # ┌─────────────────────────────────────────────────────────┐
+    # │ INITIALIZING DEEP HUNGER NETWORK                        │
+    # │ Loading mass pre-trained weights... (snek is mass chonky)      │
+    # │ Calibrating appetite tensors...                         │
+    # │ Warming up GPU (General Purpose Stomach)...             │
+    # └─────────────────────────────────────────────────────────┘
 
-    runs-on: ubuntu-latest  # my natural habitat
-    timeout-minutes: 5  # if i take longer, something went wrong. send help.
+    permissions:
+      contents: write
+      # ^ Required for writing eating logs to the contribution database
+      #   Ethics board approved: consuming green squares is victimless
+
+    runs-on: ubuntu-latest
+    # ^ Deploying on cloud infrastructure
+    #   Why mass cloud? Because snek is too long for local machine
+
+    timeout-minutes: 5
+    # ^ Maximum inference time before model assumes it died
+    #   If exceeded, please feed the neural network manually
 
     steps:
-      # PHASE 1: THE HUNT
-      - name: waking up... yawning... stretching...
+      # ══════════════════════════════════════════════════════════
+      # STEP 1: FORWARD PASS THROUGH HUNGER LAYERS
+      # ══════════════════════════════════════════════════════════
+      - name: Loading pre-trained appetite model and running inference on contribution matrix...
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          # today's menu: your mass contributions
+          # INPUT TENSOR: contribution_grid.shape = (52, 7)
+          # OUTPUT TENSOR: beautiful_snek_animation.svg
+          # HIDDEN LAYERS: just vibes honestly
           outputs: |
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#FFFFFF&color_dots=#0D1117,#1c2636,#006d32,#26a641,#39d353
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # my VIP pass to the buffet
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # ^ API key to the contribution buffet
+          #   Rate limit: unlimited (snek has mass premium subscription)
 
-      # PHASE 2: POSTING THE EVIDENCE
-      - name: uploading proof of my crimes
+      # ══════════════════════════════════════════════════════════
+      # STEP 2: DEPLOYING MODEL OUTPUTS TO PRODUCTION
+      # ══════════════════════════════════════════════════════════
+      - name: Pushing trained model artifacts to distributed snake storage system (DSSS)...
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          target_branch: output  # the crime scene
-          build_dir: dist  # where i hide the bodies
+          target_branch: output
+          # ^ The sacred branch where snek evidence is stored
+          #   Also known as: the_crime_scene_branch
+          build_dir: dist
+          # ^ Build directory containing:
+          #   - snake.svg (the masterpiece)
+          #   - consumed_contributions.log (classified)
+          #   - no_regrets.txt (empty file, as expected)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-# ================================================
-#  snek.exe has finished executing
-#  contributions consumed: YES
-#  regrets: NONE
-#  see you tomorrow :)
-# ================================================
+# ╔══════════════════════════════════════════════════════════════════════════════╗
+# ║                                                                              ║
+# ║   ██████╗ ██╗   ██╗███╗   ██╗    ██████╗ ██████╗ ███╗   ███╗██████╗ ██╗      ║
+# ║   ██╔══██╗██║   ██║████╗  ██║   ██╔════╝██╔═══██╗████╗ ████║██╔══██╗██║      ║
+# ║   ██████╔╝██║   ██║██╔██╗ ██║   ██║     ██║   ██║██╔████╔██║██████╔╝██║      ║
+# ║   ██╔══██╗██║   ██║██║╚██╗██║   ██║     ██║   ██║██║╚██╔╝██║██╔═══╝ ██║      ║
+# ║   ██║  ██║╚██████╔╝██║ ╚████║   ╚██████╗╚██████╔╝██║ ╚═╝ ██║██║     ███████╗ ║
+# ║   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝    ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝     ╚══════╝ ║
+# ║                                                                              ║
+# ║   Model execution complete.                                                  ║
+# ║   Contributions consumed: ██████████████████████████████ 100%               ║
+# ║   Stomach status: SATISFIED (for now)                                        ║
+# ║   Next scheduled feeding: Tomorrow 00:00 UTC                                 ║
+# ║                                                                              ║
+# ║   Thank you for using SNEK-NEUR.                                             ║
+# ║   "We eat so you don't have to mass mass look at mass empty mass squares."                        ║
+# ║                                                                              ║
+# ║   🐍 ssssee you tomorrow                                                     ║
+# ║                                                                              ║
+# ╚══════════════════════════════════════════════════════════════════════════════╝
