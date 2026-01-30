@@ -1,35 +1,33 @@
-<!-- Dark Neural Banner -->
-<div align="center">
-  <img src="https://raw.githubusercontent.com/yourusername/yourusername/main/assets/banner-neural-blue.jpg" alt="Neural Landscape" />
-</div>
-
-<!-- Optional animated fallback if you want subtle movement -->
-<!--
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/.../neural-banner-animated.gif" alt="Neural Landscape Animated" width="100%"/>
-</div>
--->
-
-<br>
-
-<!-- Title with gradient text (pure CSS, works on GitHub) -->
-<h1 align="center">
-  <span style="background: linear-gradient(90deg, #0b1a2e 0%, #6AA7FF 50%, #0b1a2e 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-    NoSelection
-  </span>
-</h1>
-
-<!-- Tagline – clean mono font, subtle blue glow -->
 <p align="center">
-  <code style="color:#6AA7FF; background:#0b1a2e; padding: 8px 16px; border-radius: 8px; font-size: 1.1em; box-shadow: 0 0 20px rgba(106,167,255,0.3);">
-    Building intelligent systems • Experimental software & tools
-  </code>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&pause=1500&color=00D4FF&center=true&vCenter=true&width=550&height=70&lines=Hey%2C+I'm+Ahmet;Building+intelligent+systems;AI+%2F+Experimental+Tech;Neural+networks+%26+beyond..." />
 </p>
 
-<br>
+<p align="center">
+  <img width="800" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Ahmet&fontSize=70&fontColor=00D4FF&animation=twinkling&fontAlignY=40" />
+</p>
 
-<!-- Optional subtle divider to separate header from content -->
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/216120981-b2d0d1c5-0b2d-4e0f-9e7e-3c2d1e4f6e0e.gif" width="600" style="opacity: 0.6;"/>
-  <!-- or use a static one: https://user-images.githubusercontent.com/.../divider-blue.svg -->
-</div>
+<!-- Your upgraded typing here -->
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&theme=dracula&hide_border=true&border_radius=10&background=00000000" />
+</p>
+
+<!-- Stats cards - dark neon style -->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=00D4FF&icon_color=00D4FF&text_color=cccccc" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=dracula&hide_border=true&bg_color=0d1117&title_color=00D4FF&text_color=cccccc" width="40%" />
+</p>
+
+<!-- Tech stack with neon badges -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-Expert-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/TensorFlow-Advanced-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
+  <img src="https://img.shields.io/badge/PyTorch-Advanced-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
+  <!-- Add your own: AI, Neural Nets, etc. -->
+</p>
+
+<!-- Optional: Contribution snake or 3D graph for that wow factor -->
+<!-- https://github.com/Platane/snk (generate a snake gif/svg) -->
+<p align="center">
+  <img src="https://github.com/YOUR_USERNAME/YOUR_USERNAME/blob/output/github-contribution-grid-snake.svg" />
+</p>
