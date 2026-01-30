@@ -1,16 +1,11 @@
 <div align="center">
 
-<br>
-<br>
-<br>
-
-<a href="https://github.com/NoSelection">
-  <img src="https://github.com/NoSelection.png" width="120" style="border-radius: 50%;" />
-</a>
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0d1117,50:1a1a2e,100:16213e&height=200&section=header&animation=fadeIn"/>
 
 <br>
-<br>
-<br>
+
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=100&size=14&duration=4000&pause=1000&color=4a5568&center=true&vCenter=true&repeat=true&width=435&lines=.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.;.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+." alt="" />
+
 <br>
 <br>
 
@@ -21,10 +16,12 @@
 </picture>
 
 <br>
-<br>
+
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=100&size=14&duration=4000&pause=1000&color=4a5568&center=true&vCenter=true&repeat=true&width=435&lines=.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.;.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+." alt="" />
+
 <br>
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:161b22&height=80&section=footer&reversal=true"/>
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:16213e,50:1a1a2e,100:0d1117&height=200&section=footer&reversal=true&animation=fadeIn"/>
 
 </div>
