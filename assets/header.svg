@@ -1,133 +1,137 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" preserveAspectRatio="xMidYMid slice">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250">
   <defs>
-    <!-- Animated gradients -->
-    <linearGradient id="wave1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="50%" stop-color="#1a1f2e">
-        <animate attributeName="offset" values="0%;50%;0%" dur="8s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#0d1117"/>
-    </linearGradient>
-
-    <linearGradient id="glow1" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#58a6ff" stop-opacity="0">
-        <animate attributeName="stop-opacity" values="0;0.15;0" dur="4s" repeatCount="indefinite"/>
+        <animate attributeName="offset" values="-1;1" dur="3s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="50%" stop-color="#58a6ff" stop-opacity="0.1">
-        <animate attributeName="stop-opacity" values="0.1;0.3;0.1" dur="4s" repeatCount="indefinite"/>
+      <stop offset="50%" stop-color="#58a6ff" stop-opacity="0.6">
+        <animate attributeName="offset" values="-0.5;1.5" dur="3s" repeatCount="indefinite"/>
       </stop>
       <stop offset="100%" stop-color="#58a6ff" stop-opacity="0">
-        <animate attributeName="stop-opacity" values="0;0.15;0" dur="4s" repeatCount="indefinite"/>
+        <animate attributeName="offset" values="0;2" dur="3s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
-
-    <radialGradient id="orb1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
-    </radialGradient>
-
-    <radialGradient id="orb2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
-    </radialGradient>
-
-    <filter id="blur1">
-      <feGaussianBlur stdDeviation="20"/>
-    </filter>
-    <filter id="blur2">
-      <feGaussianBlur stdDeviation="40"/>
-    </filter>
-    <filter id="blur3">
-      <feGaussianBlur stdDeviation="3"/>
-    </filter>
   </defs>
 
-  <!-- Base -->
-  <rect width="800" height="300" fill="#0d1117"/>
+  <!-- Background -->
+  <rect width="800" height="250" fill="#0d1117"/>
 
-  <!-- Flowing orbs - shader-like blobs -->
-  <g filter="url(#blur2)">
-    <ellipse cx="200" cy="150" rx="150" ry="100" fill="url(#orb1)">
-      <animate attributeName="cx" values="200;350;200" dur="12s" repeatCount="indefinite"/>
-      <animate attributeName="cy" values="150;180;150" dur="8s" repeatCount="indefinite"/>
-      <animate attributeName="rx" values="150;200;150" dur="10s" repeatCount="indefinite"/>
-    </ellipse>
-    <ellipse cx="600" cy="150" rx="180" ry="120" fill="url(#orb2)">
-      <animate attributeName="cx" values="600;450;600" dur="14s" repeatCount="indefinite"/>
-      <animate attributeName="cy" values="150;120;150" dur="9s" repeatCount="indefinite"/>
-      <animate attributeName="rx" values="180;140;180" dur="11s" repeatCount="indefinite"/>
-    </ellipse>
-    <ellipse cx="400" cy="200" rx="120" ry="80" fill="url(#orb1)">
-      <animate attributeName="cx" values="400;300;500;400" dur="16s" repeatCount="indefinite"/>
-      <animate attributeName="cy" values="200;100;200" dur="10s" repeatCount="indefinite"/>
-    </ellipse>
+  <!-- Animated grid pattern -->
+  <g stroke="#21262d" stroke-width="1">
+    <line x1="0" y1="50" x2="800" y2="50" opacity="0.5"/>
+    <line x1="0" y1="100" x2="800" y2="100" opacity="0.3"/>
+    <line x1="0" y1="150" x2="800" y2="150" opacity="0.3"/>
+    <line x1="0" y1="200" x2="800" y2="200" opacity="0.5"/>
+
+    <line x1="100" y1="0" x2="100" y2="250" opacity="0.2"/>
+    <line x1="200" y1="0" x2="200" y2="250" opacity="0.2"/>
+    <line x1="300" y1="0" x2="300" y2="250" opacity="0.2"/>
+    <line x1="400" y1="0" x2="400" y2="250" opacity="0.3"/>
+    <line x1="500" y1="0" x2="500" y2="250" opacity="0.2"/>
+    <line x1="600" y1="0" x2="600" y2="250" opacity="0.2"/>
+    <line x1="700" y1="0" x2="700" y2="250" opacity="0.2"/>
   </g>
 
-  <!-- Wave lines - mathematical sine waves -->
-  <g stroke="#58a6ff" fill="none" stroke-width="1" opacity="0.4" filter="url(#blur3)">
-    <path d="M0,150 Q100,100 200,150 T400,150 T600,150 T800,150">
+  <!-- Scanning line effect -->
+  <rect x="0" y="0" width="800" height="3" fill="url(#shimmer)">
+    <animate attributeName="y" values="0;250;0" dur="8s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Floating orbs -->
+  <g fill="#58a6ff">
+    <circle cx="150" cy="80" r="3" opacity="0.7">
+      <animate attributeName="cy" values="80;170;80" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0.3;0.7" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="180" r="2" opacity="0.5">
+      <animate attributeName="cy" values="180;70;180" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.9;0.5" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="60" r="2.5" opacity="0.6">
+      <animate attributeName="cy" values="60;190;60" dur="11s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="11s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="650" cy="150" r="2" opacity="0.4">
+      <animate attributeName="cy" values="150;50;150" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="750" cy="100" r="3" opacity="0.5">
+      <animate attributeName="cy" values="100;200;100" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="50" cy="200" r="2" opacity="0.6">
+      <animate attributeName="cy" values="200;80;200" dur="12s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Pulsing rings -->
+  <g fill="none" stroke="#58a6ff">
+    <circle cx="400" cy="125" r="30" stroke-width="1" opacity="0">
+      <animate attributeName="r" values="30;80" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="125" r="30" stroke-width="1" opacity="0">
+      <animate attributeName="r" values="30;80" dur="4s" begin="1.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="4s" begin="1.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="125" r="30" stroke-width="1" opacity="0">
+      <animate attributeName="r" values="30;80" dur="4s" begin="2.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="4s" begin="2.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Center typing text -->
+  <text x="400" y="130" text-anchor="middle" fill="#c9d1d9" font-family="monospace" font-size="18" font-weight="300">
+    <tspan opacity="0">
+      NoSelection
+      <animate attributeName="opacity" values="0;1;1;1;1;1;0" dur="8s" repeatCount="indefinite"/>
+    </tspan>
+  </text>
+
+  <!-- Cursor blink -->
+  <rect x="480" y="115" width="2" height="20" fill="#58a6ff">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    <animate attributeName="x" values="305;480;480" dur="2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Binary rain columns -->
+  <g fill="#58a6ff" font-family="monospace" font-size="10" opacity="0.15">
+    <text x="80" y="0">
+      <animate attributeName="y" values="-20;270" dur="15s" repeatCount="indefinite"/>
+      10110
+    </text>
+    <text x="180" y="0">
+      <animate attributeName="y" values="-50;240" dur="12s" repeatCount="indefinite"/>
+      01001
+    </text>
+    <text x="280" y="0">
+      <animate attributeName="y" values="-30;260" dur="18s" repeatCount="indefinite"/>
+      11010
+    </text>
+    <text x="520" y="0">
+      <animate attributeName="y" values="-10;280" dur="14s" repeatCount="indefinite"/>
+      00101
+    </text>
+    <text x="620" y="0">
+      <animate attributeName="y" values="-40;250" dur="16s" repeatCount="indefinite"/>
+      10011
+    </text>
+    <text x="720" y="0">
+      <animate attributeName="y" values="-60;230" dur="13s" repeatCount="indefinite"/>
+      01110
+    </text>
+  </g>
+
+  <!-- Data flow lines -->
+  <g stroke="#58a6ff" stroke-width="1" fill="none" opacity="0.3">
+    <path d="M0,200 Q200,150 400,200 T800,200">
       <animate attributeName="d"
-        values="M0,150 Q100,100 200,150 T400,150 T600,150 T800,150;
-                M0,150 Q100,200 200,150 T400,150 T600,150 T800,150;
-                M0,150 Q100,100 200,150 T400,150 T600,150 T800,150"
+        values="M0,200 Q200,150 400,200 T800,200;M0,200 Q200,250 400,200 T800,200;M0,200 Q200,150 400,200 T800,200"
         dur="6s" repeatCount="indefinite"/>
     </path>
-    <path d="M0,160 Q100,110 200,160 T400,160 T600,160 T800,160" opacity="0.3">
+    <path d="M0,50 Q200,100 400,50 T800,50">
       <animate attributeName="d"
-        values="M0,160 Q100,110 200,160 T400,160 T600,160 T800,160;
-                M0,160 Q100,210 200,160 T400,160 T600,160 T800,160;
-                M0,160 Q100,110 200,160 T400,160 T600,160 T800,160"
+        values="M0,50 Q200,100 400,50 T800,50;M0,50 Q200,0 400,50 T800,50;M0,50 Q200,100 400,50 T800,50"
         dur="5s" repeatCount="indefinite"/>
     </path>
-    <path d="M0,140 Q100,90 200,140 T400,140 T600,140 T800,140" opacity="0.3">
-      <animate attributeName="d"
-        values="M0,140 Q100,90 200,140 T400,140 T600,140 T800,140;
-                M0,140 Q100,190 200,140 T400,140 T600,140 T800,140;
-                M0,140 Q100,90 200,140 T400,140 T600,140 T800,140"
-        dur="7s" repeatCount="indefinite"/>
-    </path>
   </g>
-
-  <!-- Floating particles with trails -->
-  <g fill="#58a6ff">
-    <circle cx="100" cy="80" r="2" opacity="0.8">
-      <animate attributeName="cx" values="100;700;100" dur="20s" repeatCount="indefinite"/>
-      <animate attributeName="cy" values="80;220;80" dur="13s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="6s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="700" cy="220" r="1.5" opacity="0.6">
-      <animate attributeName="cx" values="700;100;700" dur="18s" repeatCount="indefinite"/>
-      <animate attributeName="cy" values="220;80;220" dur="15s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="5s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="400" cy="150" r="2.5" opacity="0.7">
-      <animate attributeName="cx" values="400;200;600;400" dur="22s" repeatCount="indefinite"/>
-      <animate attributeName="cy" values="150;250;50;150" dur="17s" repeatCount="indefinite"/>
-      <animate attributeName="r" values="2.5;1.5;2.5" dur="8s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="250" cy="200" r="1.8" opacity="0.5">
-      <animate attributeName="cx" values="250;550;250" dur="16s" repeatCount="indefinite"/>
-      <animate attributeName="cy" values="200;100;200" dur="11s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="550" cy="100" r="2" opacity="0.6">
-      <animate attributeName="cx" values="550;250;550" dur="19s" repeatCount="indefinite"/>
-      <animate attributeName="cy" values="100;200;100" dur="14s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-
-  <!-- Subtle grid overlay -->
-  <g stroke="#58a6ff" stroke-width="0.3" opacity="0.08">
-    <line x1="0" y1="75" x2="800" y2="75"/>
-    <line x1="0" y1="150" x2="800" y2="150"/>
-    <line x1="0" y1="225" x2="800" y2="225"/>
-    <line x1="200" y1="0" x2="200" y2="300"/>
-    <line x1="400" y1="0" x2="400" y2="300"/>
-    <line x1="600" y1="0" x2="600" y2="300"/>
-  </g>
-
-  <!-- Breathing center glow -->
-  <ellipse cx="400" cy="150" rx="300" ry="150" fill="url(#glow1)" filter="url(#blur1)">
-    <animate attributeName="rx" values="300;350;300" dur="8s" repeatCount="indefinite"/>
-    <animate attributeName="ry" values="150;180;150" dur="6s" repeatCount="indefinite"/>
-  </ellipse>
 </svg>
