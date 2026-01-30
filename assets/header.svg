@@ -1,262 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250">
-  <!-- Background -->
-  <rect width="800" height="250" fill="#0d1117"/>
+  <title>NoSelection header</title>
+  <desc>Minimal blue energy flow on dark background with the NoSelection label.</desc>
 
-  <!-- Subtle grid -->
-  <g stroke="#21262d" stroke-width="1" opacity="0.4">
-    <line x1="0" y1="50" x2="800" y2="50"/>
-    <line x1="0" y1="125" x2="800" y2="125"/>
-    <line x1="0" y1="200" x2="800" y2="200"/>
-    <line x1="200" y1="0" x2="200" y2="250"/>
-    <line x1="400" y1="0" x2="400" y2="250"/>
-    <line x1="600" y1="0" x2="600" y2="250"/>
-  </g>
-
-  <!-- Floating orbs -->
-  <g fill="#58a6ff">
-    <circle cx="120" cy="70" r="3" opacity="0.6">
-      <animate attributeName="cy" values="70;180;70" dur="12s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="12s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="280" cy="190" r="2" opacity="0.4">
-      <animate attributeName="cy" values="190;60;190" dur="15s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="15s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="520" cy="50" r="2.5" opacity="0.5">
-      <animate attributeName="cy" values="50;200;50" dur="18s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.5;0.2;0.5" dur="18s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="680" cy="160" r="2" opacity="0.4">
-      <animate attributeName="cy" values="160;40;160" dur="14s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="14s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="750" cy="90" r="2.5" opacity="0.5">
-      <animate attributeName="cy" values="90;210;90" dur="16s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="50" cy="200" r="2" opacity="0.5">
-      <animate attributeName="cy" values="200;70;200" dur="20s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-
-  <!-- Pulsing rings -->
-  <g fill="none" stroke="#58a6ff" stroke-width="1">
-    <circle cx="400" cy="125" r="20" opacity="0">
-      <animate attributeName="r" values="20;70" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.4;0" dur="4s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="400" cy="125" r="20" opacity="0">
-      <animate attributeName="r" values="20;70" dur="4s" begin="1.3s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.4;0" dur="4s" begin="1.3s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="400" cy="125" r="20" opacity="0">
-      <animate attributeName="r" values="20;70" dur="4s" begin="2.6s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.4;0" dur="4s" begin="2.6s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-
-  <!-- Quote masks -->
   <defs>
-    <mask id="reveal-q01" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
-      <rect x="100" y="108" width="0" height="30" fill="#ffffff">
-        <animate attributeName="width" dur="140s" repeatCount="indefinite" values="0;0;600;600;0" keyTimes="0;0;0.02;0.05;1"/>
-      </rect>
-    </mask>
-    <mask id="reveal-q02" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
-      <rect x="100" y="108" width="0" height="30" fill="#ffffff">
-        <animate attributeName="width" dur="140s" repeatCount="indefinite" values="0;0;600;600;0" keyTimes="0;0.05;0.07;0.10;1"/>
-      </rect>
-    </mask>
-    <mask id="reveal-q03" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
-      <rect x="100" y="108" width="0" height="30" fill="#ffffff">
-        <animate attributeName="width" dur="140s" repeatCount="indefinite" values="0;0;600;600;0" keyTimes="0;0.10;0.12;0.15;1"/>
-      </rect>
-    </mask>
-    <mask id="reveal-q04" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
-      <rect x="100" y="108" width="0" height="30" fill="#ffffff">
-        <animate attributeName="width" dur="140s" repeatCount="indefinite" values="0;0;600;600;0" keyTimes="0;0.15;0.17;0.20;1"/>
-      </rect>
-    </mask>
-    <mask id="reveal-q05" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
-      <rect x="100" y="108" width="0" height="30" fill="#ffffff">
-        <animate attributeName="width" dur="140s" repeatCount="indefinite" values="0;0;600;600;0" keyTimes="0;0.20;0.22;0.25;1"/>
-      </rect>
-    </mask>
-    <mask id="reveal-q06" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
-      <rect x="100" y="108" width="0" height="30" fill="#ffffff">
-        <animate attributeName="width" dur="140s" repeatCount="indefinite" values="0;0;600;600;0" keyTimes="0;0.25;0.27;0.30;1"/>
-      </rect>
-    </mask>
-    <mask id="reveal-q07" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
-      <rect x="100" y="108" width="0" height="30" fill="#ffffff">
-        <animate attributeName="width" dur="140s" repeatCount="indefinite" values="0;0;600;600;0" keyTimes="0;0.30;0.32;0.35;1"/>
-      </rect>
-    </mask>
-    <mask id="reveal-q08" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
-      <rect x="100" y="108" width="0" height="30" fill="#ffffff">
-        <animate attributeName="width" dur="140s" repeatCount="indefinite" values="0;0;600;600;0" keyTimes="0;0.35;0.37;0.40;1"/>
-      </rect>
-    </mask>
-    <mask id="reveal-q09" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
-      <rect x="100" y="108" width="0" height="30" fill="#ffffff">
-        <animate attributeName="width" dur="140s" repeatCount="indefinite" values="0;0;600;600;0" keyTimes="0;0.40;0.42;0.45;1"/>
-      </rect>
-    </mask>
-    <mask id="reveal-q10" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
-      <rect x="100" y="108" width="0" height="30" fill="#ffffff">
-        <animate attributeName="width" dur="140s" repeatCount="indefinite" values="0;0;600;600;0" keyTimes="0;0.45;0.47;0.50;1"/>
-      </rect>
-    </mask>
-    <mask id="reveal-q11" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
-      <rect x="100" y="108" width="0" height="30" fill="#ffffff">
-        <animate attributeName="width" dur="140s" repeatCount="indefinite" values="0;0;600;600;0" keyTimes="0;0.50;0.52;0.55;1"/>
-      </rect>
-    </mask>
-    <mask id="reveal-q12" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
-      <rect x="100" y="108" width="0" height="30" fill="#ffffff">
-        <animate attributeName="width" dur="140s" repeatCount="indefinite" values="0;0;600;600;0" keyTimes="0;0.55;0.57;0.60;1"/>
-      </rect>
-    </mask>
-    <mask id="reveal-q13" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
-      <rect x="100" y="108" width="0" height="30" fill="#ffffff">
-        <animate attributeName="width" dur="140s" repeatCount="indefinite" values="0;0;600;600;0" keyTimes="0;0.60;0.62;0.65;1"/>
-      </rect>
-    </mask>
-    <mask id="reveal-q14" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
-      <rect x="100" y="108" width="0" height="30" fill="#ffffff">
-        <animate attributeName="width" dur="140s" repeatCount="indefinite" values="0;0;600;600;0" keyTimes="0;0.65;0.67;0.70;1"/>
-      </rect>
-    </mask>
-    <mask id="reveal-q15" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
-      <rect x="100" y="108" width="0" height="30" fill="#ffffff">
-        <animate attributeName="width" dur="140s" repeatCount="indefinite" values="0;0;600;600;0" keyTimes="0;0.70;0.72;0.75;1"/>
-      </rect>
-    </mask>
-    <mask id="reveal-q16" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
-      <rect x="100" y="108" width="0" height="30" fill="#ffffff">
-        <animate attributeName="width" dur="140s" repeatCount="indefinite" values="0;0;600;600;0" keyTimes="0;0.75;0.77;0.80;1"/>
-      </rect>
-    </mask>
-    <mask id="reveal-q17" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
-      <rect x="100" y="108" width="0" height="30" fill="#ffffff">
-        <animate attributeName="width" dur="140s" repeatCount="indefinite" values="0;0;600;600;0" keyTimes="0;0.80;0.82;0.85;1"/>
-      </rect>
-    </mask>
-    <mask id="reveal-q18" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
-      <rect x="100" y="108" width="0" height="30" fill="#ffffff">
-        <animate attributeName="width" dur="140s" repeatCount="indefinite" values="0;0;600;600;0" keyTimes="0;0.85;0.87;0.90;1"/>
-      </rect>
-    </mask>
-    <mask id="reveal-q19" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
-      <rect x="100" y="108" width="0" height="30" fill="#ffffff">
-        <animate attributeName="width" dur="140s" repeatCount="indefinite" values="0;0;600;600;0" keyTimes="0;0.90;0.92;0.95;1"/>
-      </rect>
-    </mask>
-    <mask id="reveal-q20" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
-      <rect x="100" y="108" width="0" height="30" fill="#ffffff">
-        <animate attributeName="width" dur="140s" repeatCount="indefinite" values="0;0;600;600;0" keyTimes="0;0.95;0.97;1;1"/>
-      </rect>
-    </mask>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7cc4ff" stop-opacity="0.05"/>
+      <stop offset="45%" stop-color="#7cc4ff" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#8fd2ff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#7cc4ff" stop-opacity="0.08"/>
+    </linearGradient>
+    <radialGradient id="core" cx="50%" cy="55%" r="45%">
+      <stop offset="0%" stop-color="#9ad8ff" stop-opacity="0.25"/>
+      <stop offset="55%" stop-color="#6bb6ff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#6bb6ff" stop-opacity="0"/>
+    </radialGradient>
   </defs>
 
-  <!-- Rotating quotes -->
-  <g id="quote-rotator" fill="#e6edf3" font-family="monospace" font-size="16" font-weight="400" letter-spacing="1" text-anchor="middle">
-    <text x="400" y="130" mask="url(#reveal-q01)" opacity="0">
-      Clarity is a power move.
-      <animate attributeName="opacity" dur="140s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0;0.005;0.045;0.05;1"/>
-    </text>
-    <text x="400" y="130" mask="url(#reveal-q02)" opacity="0">
-      Build calm. Ship sharp.
-      <animate attributeName="opacity" dur="140s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.05;0.055;0.095;0.10;1"/>
-    </text>
-    <text x="400" y="130" mask="url(#reveal-q03)" opacity="0">
-      Noise is expensive.
-      <animate attributeName="opacity" dur="140s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.10;0.105;0.145;0.15;1"/>
-    </text>
-    <text x="400" y="130" mask="url(#reveal-q04)" opacity="0">
-      Depth compounds quietly.
-      <animate attributeName="opacity" dur="140s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.15;0.155;0.195;0.20;1"/>
-    </text>
-    <text x="400" y="130" mask="url(#reveal-q05)" opacity="0">
-      Structure before speed.
-      <animate attributeName="opacity" dur="140s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.20;0.205;0.245;0.25;1"/>
-    </text>
-    <text x="400" y="130" mask="url(#reveal-q06)" opacity="0">
-      Make the complex feel inevitable.
-      <animate attributeName="opacity" dur="140s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.25;0.255;0.295;0.30;1"/>
-    </text>
-    <text x="400" y="130" mask="url(#reveal-q07)" opacity="0">
-      Systems should outlive attention.
-      <animate attributeName="opacity" dur="140s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.30;0.305;0.345;0.35;1"/>
-    </text>
-    <text x="400" y="130" mask="url(#reveal-q08)" opacity="0">
-      Elegance is disciplined omission.
-      <animate attributeName="opacity" dur="140s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.35;0.355;0.395;0.40;1"/>
-    </text>
-    <text x="400" y="130" mask="url(#reveal-q09)" opacity="0">
-      What survives execution matters.
-      <animate attributeName="opacity" dur="140s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.40;0.405;0.445;0.45;1"/>
-    </text>
-    <text x="400" y="130" mask="url(#reveal-q10)" opacity="0">
-      Less surface. More signal.
-      <animate attributeName="opacity" dur="140s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.45;0.455;0.495;0.50;1"/>
-    </text>
-    <text x="400" y="130" mask="url(#reveal-q11)" opacity="0">
-      Design is how decisions age.
-      <animate attributeName="opacity" dur="140s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.50;0.505;0.545;0.55;1"/>
-    </text>
-    <text x="400" y="130" mask="url(#reveal-q12)" opacity="0">
-      Control beats chaos -- every time.
-      <animate attributeName="opacity" dur="140s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.55;0.555;0.595;0.60;1"/>
-    </text>
-    <text x="400" y="130" mask="url(#reveal-q13)" opacity="0">
-      Good abstractions age well.
-      <animate attributeName="opacity" dur="140s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.60;0.605;0.645;0.65;1"/>
-    </text>
-    <text x="400" y="130" mask="url(#reveal-q14)" opacity="0">
-      Most leverage is invisible.
-      <animate attributeName="opacity" dur="140s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.65;0.655;0.695;0.70;1"/>
-    </text>
-    <text x="400" y="130" mask="url(#reveal-q15)" opacity="0">
-      Simplicity is engineered, not found.
-      <animate attributeName="opacity" dur="140s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.70;0.705;0.745;0.75;1"/>
-    </text>
-    <text x="400" y="130" mask="url(#reveal-q16)" opacity="0">
-      Refinement is a form of courage.
-      <animate attributeName="opacity" dur="140s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.75;0.755;0.795;0.80;1"/>
-    </text>
-    <text x="400" y="130" mask="url(#reveal-q17)" opacity="0">
-      If it needs explaining, it's not done.
-      <animate attributeName="opacity" dur="140s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.80;0.805;0.845;0.85;1"/>
-    </text>
-    <text x="400" y="130" mask="url(#reveal-q18)" opacity="0">
-      Tools shape thought. Choose carefully.
-      <animate attributeName="opacity" dur="140s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.85;0.855;0.895;0.90;1"/>
-    </text>
-    <text x="400" y="130" mask="url(#reveal-q19)" opacity="0">
-      Quiet systems scale better.
-      <animate attributeName="opacity" dur="140s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.90;0.905;0.945;0.95;1"/>
-    </text>
-    <text x="400" y="130" mask="url(#reveal-q20)" opacity="0">
-      Build for the future you.
-      <animate attributeName="opacity" dur="140s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.95;0.955;0.995;1;1"/>
-    </text>
+  <rect width="800" height="250" fill="#0b0f14"/>
+  <rect width="800" height="250" fill="url(#core)"/>
+
+  <g fill="none" stroke="url(#flow)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-80 170 C 60 120, 190 150, 310 170 S 560 230, 860 130" stroke-width="2.2" opacity="0.9"/>
+    <path d="M-60 185 C 90 150, 240 170, 360 190 S 620 230, 860 160" stroke-width="1.2" opacity="0.5"/>
+    <path d="M-70 140 C 40 90, 200 90, 330 120 S 560 190, 860 80" stroke-width="1.6" opacity="0.7"/>
+    <path d="M-40 120 C 90 70, 240 80, 360 110 S 600 170, 860 60" stroke-width="0.9" opacity="0.35"/>
   </g>
 
-  <!-- Flowing sine waves -->
-  <g stroke="#58a6ff" stroke-width="1" fill="none" opacity="0.2">
-    <path d="M0,200 Q100,170 200,200 T400,200 T600,200 T800,200">
-      <animate attributeName="d"
-        values="M0,200 Q100,170 200,200 T400,200 T600,200 T800,200;
-                M0,200 Q100,230 200,200 T400,200 T600,200 T800,200;
-                M0,200 Q100,170 200,200 T400,200 T600,200 T800,200"
-        dur="8s" repeatCount="indefinite"/>
-    </path>
-    <path d="M0,50 Q100,80 200,50 T400,50 T600,50 T800,50">
-      <animate attributeName="d"
-        values="M0,50 Q100,80 200,50 T400,50 T600,50 T800,50;
-                M0,50 Q100,20 200,50 T400,50 T600,50 T800,50;
-                M0,50 Q100,80 200,50 T400,50 T600,50 T800,50"
-        dur="7s" repeatCount="indefinite"/>
-    </path>
+  <g fill="#8fd2ff" opacity="0.35">
+    <circle cx="390" cy="140" r="1.6"/>
+    <circle cx="460" cy="125" r="1.1"/>
+    <circle cx="520" cy="160" r="1.3"/>
+    <circle cx="600" cy="145" r="0.9"/>
   </g>
+
+  <text x="70" y="210" fill="#e6edf3" font-family="monospace" font-size="18" letter-spacing="2">NoSelection</text>
 </svg>
