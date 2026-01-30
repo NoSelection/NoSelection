@@ -20,7 +20,7 @@
 
   <br/><br/>
 
-  <!-- 4. THE SNAKE (Added a version tag to force-restart it) -->
-  <img src="https://raw.githubusercontent.com/NoSelection/NoSelection/output/github-contribution-grid-snake-dark.svg?v=2" width="100%" alt="snake animation" />
-
+ <!-- THE SNAKE (Wrapped in a container to stop it from escaping) -->
+<div style="background-color: #0d1117; border-radius: 10px; padding: 20px; overflow: hidden;">
+  <img src="https://raw.githubusercontent.com/NoSelection/NoSelection/output/github-contribution-grid-snake-dark.svg" alt="snake animation" />
 </div>
