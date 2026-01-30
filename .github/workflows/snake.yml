@@ -1,34 +1,62 @@
-name: Generate Snake
+# ================================================
+#  SNEK.EXE - Autonomous Contribution Consumer
+#  Status: HUNGRY
+#  Mood: *slithering noises*
+# ================================================
+#
+#  > initializing appetite...
+#  > scanning for contributions...
+#  > nom nom nom
+#
+# ================================================
+
+name: snek go brrr
 
 on:
   schedule:
+    # every midnight i wake up hungry
     - cron: "0 0 * * *"
+
+  # human pressed the button. fine, i'll eat.
   workflow_dispatch:
+
   push:
     branches:
-    - main
+    - main  # new commits detected. smells delicious.
 
 jobs:
-  generate:
-    permissions: 
-      contents: write
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    
+  feed-the-snek:
+    # i require sustenance
+    permissions:
+      contents: write  # let me eat in peace
+
+    runs-on: ubuntu-latest  # my natural habitat
+    timeout-minutes: 5  # if i take longer, something went wrong. send help.
+
     steps:
-      - name: generate-snake-game-from-github-contribution-grid
+      # PHASE 1: THE HUNT
+      - name: waking up... yawning... stretching...
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          # today's menu: your mass contributions
           outputs: |
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#FFFFFF&color_dots=#0D1117,#1c2636,#006d32,#26a641,#39d353
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
-      - name: push github-contribution-grid-snake.svg to the output branch
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # my VIP pass to the buffet
+
+      # PHASE 2: POSTING THE EVIDENCE
+      - name: uploading proof of my crimes
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          target_branch: output
-          build_dir: dist
+          target_branch: output  # the crime scene
+          build_dir: dist  # where i hide the bodies
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+# ================================================
+#  snek.exe has finished executing
+#  contributions consumed: YES
+#  regrets: NONE
+#  see you tomorrow :)
+# ================================================
