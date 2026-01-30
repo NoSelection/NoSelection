@@ -1,11 +1,17 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0d1117,50:1a1a2e,100:16213e&height=200&section=header&animation=fadeIn"/>
-
 <br>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=100&size=14&duration=4000&pause=1000&color=4a5568&center=true&vCenter=true&repeat=true&width=435&lines=.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.;.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+." alt="" />
+<img src="./assets/header.svg" width="100%" />
 
+<br>
+<br>
+
+<a href="https://github.com/NoSelection">
+  <img src="https://github-readme-stats.vercel.app/api?username=NoSelection&show_icons=true&hide_title=true&hide_border=true&bg_color=0d1117&icon_color=58a6ff&text_color=c9d1d9&hide_rank=true&include_all_commits=true&count_private=true" height="150"/>
+</a>
+
+<br>
 <br>
 <br>
 
@@ -16,12 +22,10 @@
 </picture>
 
 <br>
-
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=100&size=14&duration=4000&pause=1000&color=4a5568&center=true&vCenter=true&repeat=true&width=435&lines=.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.;.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+." alt="" />
-
-<br>
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:16213e,50:1a1a2e,100:0d1117&height=200&section=footer&reversal=true&animation=fadeIn"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=NoSelection&bg_color=0d1117&color=58a6ff&line=58a6ff&point=58a6ff&area=true&area_color=58a6ff&hide_border=true&custom_title=" height="250"/>
+
+<br>
 
 </div>
