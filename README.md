@@ -27,9 +27,9 @@
 <br>
 
 <div style="font-family: monospace; color: #e2e8f0;">
-  <span style="color: #38bdf8;">01</span> &nbsp; MORAL DECISION SIM &nbsp; <span style="color: #475569;">//</span> &nbsp; <span style="color: #94a3b8;">ethics in silicon</span><br><br>
-  <span style="color: #38bdf8;">02</span> &nbsp; ZENSTATE &nbsp; <span style="color: #475569;">//</span> &nbsp; <span style="color: #94a3b8;">digital minimalism</span><br><br>
-  <span style="color: #38bdf8;">03</span> &nbsp; COLUMN &nbsp; <span style="color: #475569;">//</span> &nbsp; <span style="color: #94a3b8;">terminal soul</span>
+  <span style="color: #38bdf8;">01</span> &nbsp; [ SYSTEM_ARCH ] &nbsp; <span style="color: #475569;">//</span> &nbsp; <span style="color: #94a3b8;">high-throughput data pipeline</span><br><br>
+  <span style="color: #38bdf8;">02</span> &nbsp; [ NEURAL_I/O ] &nbsp; <span style="color: #475569;">//</span> &nbsp; <span style="color: #94a3b8;">experimental interface</span><br><br>
+  <span style="color: #38bdf8;">03</span> &nbsp; [ VOID_SHELL ] &nbsp; <span style="color: #475569;">//</span> &nbsp; <span style="color: #94a3b8;">automation toolkit</span>
 </div>
 
 <br>
